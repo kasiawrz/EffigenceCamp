@@ -1,0 +1,44 @@
+header {
+  background-color: darkgrey;
+
+  nav {
+    background-color: $blue;
+    padding: 5px;
+    color: $white;
+    height: 10vh;
+    font-size: 100px;
+    position: static;
+
+    .mobile-only {
+      display: flex;
+      font-size: 30px;
+      //max-height: 33.3333vw;
+
+      :first-child {
+        align-self: center;
+        border: 1px solid yellow;
+        height: 100;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        //max-width: 70px;
+        border: 1px solid pink;
+        img {
+          max-height: 55px;
+          max-width: 55px;
+        }
+      }
+      :last-child {
+        align-self: center;
+       
+        border: 1px solid greenyellow;
+      }
+
+      //&:hover {
+      //  background-color: black;
+      //}
+    }
+  }
+}
+
